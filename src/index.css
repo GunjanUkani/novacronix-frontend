@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Palette - Architectural Refinement */
+  --color-brand-red: #a11d21;
+  /* Desaturated, engineered red */
+  --color-brand-red-dark: #7a1619;
+  --color-charcoal: #111111;
+  --color-charcoal-light: #1a1a1a;
+  --color-steel: #64748b;
+  --color-steel-light: #94a3b8;
+  --color-warm-white: #faf9f6;
+
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+
+  /* Layout Constants */
+  --spacing-navbar: 85px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-warm-white text-charcoal font-sans antialiased;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-semibold tracking-tight;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Prevent horizontal scroll from animations */
+  #root {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Better touch targets on mobile */
+  @media (max-width: 768px) {
+
+    button,
+    a,
+    select,
+    input,
+    textarea {
+      min-height: 44px;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image: linear-gradient(to right, #000 1px, transparent 1px),
+      linear-gradient(to bottom, #000 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.03;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-premium {
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .section-padding {
+    @apply py-10 sm:py-14 md:py-20;
+  }
+
+  /* Responsive container padding */
+  .responsive-px {
+    @apply px-4 sm:px-6 md:px-12;
+  }
+}
