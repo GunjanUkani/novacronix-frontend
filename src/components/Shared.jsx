@@ -84,7 +84,7 @@ export const Navbar = ({ currentPage, setPage }) => {
         {/* LOGO AREA - Fixed with explicit spacing */}
         <div className="flex items-center gap-3 cursor-pointer mr-12" onClick={() => setPage('home')}>
           <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-blue-500/20 shrink-0">
-            <img src="/logo123.png" alt={`${APP_NAME} logo`} className="w-full h-full object-cover" />
+            <img src="/favicon.png" alt={`${APP_NAME} logo`} className="w-full h-full object-cover" />
           </div>
           <span className="text-2xl font-black tracking-tighter text-white uppercase italic whitespace-nowrap">{APP_NAME}</span>
         </div>

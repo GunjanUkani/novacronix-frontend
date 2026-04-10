@@ -140,7 +140,7 @@ const PackagesView = ({ setPage }) => (
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 relative">
             <div className="aspect-[4/5] bg-slate-900 rounded-[2rem] lg:rounded-[3rem] border border-white/5 p-8 lg:p-12 overflow-hidden flex flex-col justify-end">
-              <div className="absolute top-0 right-0 p-8 lg:p-12"><Sparkles className="text-blue-500" size={48} className="lg:size-[64px]" /></div>
+              <div className="absolute top-0 right-0 p-8 lg:p-12"><Sparkles className="text-blue-500" size={48} /></div>
               <h4 className="text-4xl lg:text-5xl font-black text-white mb-4 lg:mb-6 uppercase leading-tight italic">Content <br /> Mastery.</h4>
               <p className="text-slate-500 uppercase font-black text-[10px] tracking-widest">Our signature growth loop</p>
             </div>
