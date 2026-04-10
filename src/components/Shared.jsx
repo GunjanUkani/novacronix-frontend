@@ -75,7 +75,6 @@ export const Navbar = ({ currentPage, setPage }) => {
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
     { name: 'Portfolio', id: 'portfolio' },
-    { name: 'Packages', id: 'packages' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -96,7 +95,7 @@ export const Navbar = ({ currentPage, setPage }) => {
             <button
               key={item.id}
               onClick={() => setPage(item.id)}
-              className={`text-[10px] sm:text-[11px] font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-all hover:scale-105 active:scale-95 ${currentPage === item.id ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
+              className={`cursor-pointer text-[10px] sm:text-[11px] font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] transition-all hover:scale-105 active:scale-95 ${currentPage === item.id ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
             >
               {item.name}
             </button>
@@ -105,7 +104,7 @@ export const Navbar = ({ currentPage, setPage }) => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="lg:hidden text-white" onClick={() => setMobileMenu(!mobileMenu)}>
+        <button className="lg:hidden text-white cursor-pointer" onClick={() => setMobileMenu(!mobileMenu)}>
           {mobileMenu ? <X /> : <Menu />}
         </button>
       </div>
@@ -122,7 +121,7 @@ export const Navbar = ({ currentPage, setPage }) => {
               <button
                 key={item.id}
                 onClick={() => { setPage(item.id); setMobileMenu(false); }}
-                className={`text-left text-base sm:text-lg font-black uppercase tracking-widest ${currentPage === item.id ? 'text-blue-400' : 'text-slate-300'}`}
+                className={`cursor-pointer text-left text-base sm:text-lg font-black uppercase tracking-widest ${currentPage === item.id ? 'text-blue-400' : 'text-slate-300'}`}
               >
                 {item.name}
               </button>

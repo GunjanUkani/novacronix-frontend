@@ -8,7 +8,7 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Twitter,
+  Facebook,
   Menu,
   X,
   Code2,
@@ -110,9 +110,14 @@ export default function App() {
                 Empowering modern brands through high-fidelity mobile apps, AI-driven software, and result-driven content strategies.
               </p>
               <div className="flex gap-3 sm:gap-4 lg:gap-5">
-                {[Twitter, Linkedin, Instagram, Github].map((Icon, i) => (
-                  <a key={i} href="#" className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all group shadow-xl">
-                    <Icon size={18} className="sm:size-[20px] group-hover:scale-110" />
+                {[
+                  { Icon: Instagram, href: 'https://www.instagram.com/novacronix' },
+                  { Icon: Linkedin, href: 'https://www.linkedin.com/company/novacronix' },
+                  { Icon: Facebook, href: 'https://www.facebook.com/novacronix' },
+                  { Icon: X, href: 'https://x.com/novacronix' }
+                ].map((item, i) => (
+                  <a key={i} href={item.href} target="_blank" rel="noreferrer" className="cursor-pointer w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all group shadow-xl">
+                    <item.Icon size={18} className="sm:size-[20px] group-hover:scale-110" />
                   </a>
                 ))}
               </div>
@@ -137,7 +142,7 @@ export default function App() {
             </div>
           </div>
           <div className="pt-8 sm:pt-10 lg:pt-12 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 lg:gap-8 text-[10px] font-black text-slate-700 uppercase tracking-[0.3em] sm:tracking-[0.4em]">
-            <p className="text-center sm:text-left">© 2024 Novacronix Technologies. All Rights Reserved.</p>
+            <p className="text-center sm:text-left">© 2026 Novacronix Technologies. All Rights Reserved.</p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-12 text-center sm:text-left">
               <span className="flex items-center justify-center sm:justify-start gap-2"><Zap size={10} className="text-blue-500" /> Precision</span>
               <span className="flex items-center justify-center sm:justify-start gap-2"><Activity size={10} className="text-purple-500" /> Performance</span>

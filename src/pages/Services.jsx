@@ -28,12 +28,6 @@ const FlutterLogo = ({ size = 28, className = '' }) => (
   </svg>
 );
 
-const PythonLogo = ({ size = 28, className = '' }) => (
-  <svg viewBox="0 0 24 24" width={size} height={size} className={className} fill="#3776AB" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
-  </svg>
-);
-
 const AndroidLogo = ({ size = 28, className = '' }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} className={className} fill="#3DDC84" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
     <path d="M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z" />
@@ -54,9 +48,17 @@ const NodeLogo = ({ size = 28, className = '' }) => (
 
 const AWSLogo = ({ size = 28, className = '' }) => (
   <svg viewBox="0 0 128 128" width={size} height={size} className={className} aria-hidden="true">
-    <path fill="#FF9900" d="M20 90c25-35 40-52 50-52s25 17 50 52H20z" />
-    <path fill="#FF9900" d="M24 84c23-30 35-45 44-45s21 15 44 45H24z" opacity="0.8" />
-    <path fill="#FF9900" d="M28 78c20-25 30-38 37-38s17 13 37 38H28z" opacity="0.6" />
+    <rect width="128" height="128" rx="28" fill="#FF9900" />
+    <text x="50%" y="58%" fill="#ffffff" fontSize="44" fontWeight="700" fontFamily="system-ui, sans-serif" textAnchor="middle" dominantBaseline="middle">AWS</text>
+    <path d="M32 92h64v10H32z" fill="rgba(255,255,255,0.15)" />
+  </svg>
+);
+
+const JavaScriptLogo = ({ size = 28, className = '' }) => (
+  <svg viewBox="0 0 128 128" width={size} height={size} className={className} aria-hidden="true">
+    <rect width="128" height="128" rx="28" fill="#F7DF1E" />
+    <path fill="#000000" d="M39 38h16c6 0 9 0 12 1 5 1 8 4 10 9 1 3 2 7 2 17 0 8 0 12-1 14-2 6-6 9-11 10-3 1-5 1-12 1H39V38zm24 29c0-11-1-14-4-16-3-2-5-2-12-2H43v37h4c7 0 9 0 12-1 6-1 8-4 10-10 0-2 1-6 1-11z" />
+    <path fill="#000000" d="M86 39h20v13H97v7h9v13h-9v16h-16V39z" />
   </svg>
 );
 
@@ -93,7 +95,7 @@ const ServicesView = ({ setPage }) => (
             <div className="grid sm:grid-cols-2 gap-y-4 lg:gap-y-6 gap-x-8 lg:gap-x-12">
               {[
                 "Android Development", "iOS Development", "Flutter Cross-Platform",
-                "AI & ML Solutions", "Python Automation", "Custom CRM Systems",
+                "AI & ML Solutions", "JS Automation", "Custom CRM Systems",
                 "Interior CRM Solutions", "Web Applications",
                 "API Integrations", "Admin Dashboards", "Landing Pages"
               ].map(s => (
@@ -138,14 +140,14 @@ const ServicesView = ({ setPage }) => (
         <SectionHeading subtitle="Tech Stack" title="Our Modular Infrastructure" />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
           {[
-            { n: "REACT", i: ReactLogo }, 
-            { n: "FLUTTER", i: FlutterLogo }, 
-            { n: "PYTHON", i: PythonLogo },
-            { n: "ANDROID", i: AndroidLogo }, 
-            { n: "IOS", i: AppleLogo }, 
+            { n: "REACT", i: ReactLogo },
+            { n: "FLUTTER", i: FlutterLogo },
+            { n: "JAVASCRIPT", i: JavaScriptLogo },
+            { n: "ANDROID", i: AndroidLogo },
+            { n: "IOS", i: AppleLogo },
             { n: "AI & ML", i: BrainCircuit },
-            { n: "NODE.JS", i: NodeLogo }, 
-            { n: "AWS", i: AWSLogo }, 
+            { n: "NODE.JS", i: NodeLogo },
+            { n: "AWS", i: AWSLogo },
             { n: "TYPESCRIPT", i: TypeScriptLogo },
             { n: "NEXT.JS", i: NextLogo }
           ].map((t, i) => (
@@ -160,7 +162,30 @@ const ServicesView = ({ setPage }) => (
       </div>
     </section>
 
-    {/* 3. TECHNICAL WORKFLOW */}
+    {/* 3. INDUSTRY FOCUS */}
+    <section className="py-28 px-6">
+      <div className="max-w-7xl mx-auto">
+        <SectionHeading
+          subtitle="Industry Focus"
+          title="Industries We Survey"
+          description="From retail and real estate to healthcare, logistics, finance and government — we build software across every major sector."
+          centered
+        />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+          {[
+            'Real Estate', 'Healthcare', 'Finance', 'Retail', 'Logistics', 'Education',
+            'Manufacturing', 'Hospitality', 'Telecom', 'Government', 'Sports', 'Automotive'
+          ].map((industry) => (
+            <div key={industry} className="rounded-[2rem] bg-slate-900 border border-white/5 p-6 hover:border-blue-500/30 transition-all">
+              <h4 className="text-white font-black text-sm uppercase tracking-[0.24em] mb-3">{industry}</h4>
+              <p className="text-slate-500 text-sm leading-relaxed">Tailored apps, automation, and data workflows designed for modern industry demands.</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* 4. TECHNICAL WORKFLOW */}
     <section className="py-32 px-6 bg-slate-950/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -170,7 +195,7 @@ const ServicesView = ({ setPage }) => (
               {[
                 { t: "Native Performance", d: "Optimized Android and iOS code for lightning-fast mobile responsiveness." },
                 { t: "AI Integration", d: "Embedding intelligent models to automate decisions and analyze user behavior." },
-                { t: "Python Automation", d: "Scalable backends and data pipelines for processing complex business logic." }
+                { t: "JS Automation", d: "Scalable JavaScript automation and backend flows for modern business systems." }
               ].map((m, i) => (
                 <div key={i} className="flex gap-4 lg:gap-6">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-blue-600/10 border border-blue-500/20 rounded-xl flex items-center justify-center shrink-0">
@@ -189,7 +214,7 @@ const ServicesView = ({ setPage }) => (
             <Terminal className="text-blue-500/10 mb-6 lg:mb-8" size={100} />
             <div className="space-y-3 lg:space-y-4 font-mono text-[9px] lg:text-[10px] text-blue-500/40">
               <p>{`> Initializing Android/iOS build...`}</p>
-              <p>{`> Loading Python AI model...`}</p>
+              <p>{`> Loading JavaScript automation flow...`}</p>
               <p>{`> Compiling Flutter assets.`}</p>
               <p>{`> ML training epoch validated.`}</p>
               <p>{`> System ready. Mobile App online.`}</p>
@@ -205,9 +230,9 @@ const ServicesView = ({ setPage }) => (
         <SectionHeading subtitle="Quality" title="The Novacronix Standard" centered />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
           {[
-            { t: "Mobile Native", i: Smartphone }, 
+            { t: "Mobile Native", i: Smartphone },
             { t: "Intelligent AI", i: BrainCircuit },
-            { t: "Python Power", i: Binary }, 
+            { t: "JS Power", i: Binary },
             { t: "Global Scale", i: Globe }
           ].map((f, i) => (
             <div key={i} className="group">

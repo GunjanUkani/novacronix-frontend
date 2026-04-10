@@ -70,9 +70,9 @@ const HomeView = ({ setPage }) => (
             transition={{ delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[0.9] lg:leading-[0.85] mb-6 lg:mb-10"
           >
-            Transforming <br /> Ideas Into <br />
+            We Built <br /> The Tech<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-              Digital Excellence.
+              you Drive Growth
             </span>
           </motion.h1>
           <motion.p
