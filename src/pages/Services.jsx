@@ -55,10 +55,9 @@ const AWSLogo = ({ size = 28, className = '' }) => (
 );
 
 const JavaScriptLogo = ({ size = 28, className = '' }) => (
-  <svg viewBox="0 0 128 128" width={size} height={size} className={className} aria-hidden="true">
-    <rect width="128" height="128" rx="28" fill="#F7DF1E" />
-    <path fill="#000000" d="M39 38h16c6 0 9 0 12 1 5 1 8 4 10 9 1 3 2 7 2 17 0 8 0 12-1 14-2 6-6 9-11 10-3 1-5 1-12 1H39V38zm24 29c0-11-1-14-4-16-3-2-5-2-12-2H43v37h4c7 0 9 0 12-1 6-1 8-4 10-10 0-2 1-6 1-11z" />
-    <path fill="#000000" d="M86 39h20v13H97v7h9v13h-9v16h-16V39z" />
+  <svg viewBox="0 0 24 24" width={size} height={size} className={className} aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" fill="#F7DF1E" />
+    <text x="12" y="18" fontSize="16" fontWeight="900" textAnchor="middle" fill="#000000" fontFamily="Arial, sans-serif">JS</text>
   </svg>
 );
 
